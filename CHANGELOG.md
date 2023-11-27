@@ -1,3 +1,9 @@
+# [1.2.1](https://github.com/laurence-trippen/flutter_siren_2) (2023-11-27)
+
+* updated dependencies
+* migrated android target- & compile sdk to API 33
+* fixed url_launcher deprecation
+
 # [1.2.0](https://github.com/diegocosta/flutter_siren/compare/v1.1.1...v1.2.0) (2021-10-31)
 
 

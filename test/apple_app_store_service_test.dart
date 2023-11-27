@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_siren/src/services/siren_apple_app_store.dart';
+import 'package:flutter_siren_2/src/services/siren_apple_app_store.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
