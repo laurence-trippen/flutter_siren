@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_siren/flutter_siren.dart';
+import 'package:flutter_siren_2/flutter_siren_2.dart';
 
 void main() {
   runApp(const MyApp());

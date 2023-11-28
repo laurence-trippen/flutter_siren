@@ -2,7 +2,7 @@ import 'dart:io' show Platform;
 
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:version/version.dart';
 
 import './entities/siren_store_response.dart';
@@ -82,8 +82,8 @@ There is an updated version available on the App Store. Would you like to upgrad
                   onPressed: () async {
                     final url = _response.url;
 
-                    if (url != '' && await canLaunch(url)) {
-                      await launch(url, forceSafariVC: false);
+                    if (url != '' && await canLaunchUrlString(url)) {
+                      await launchUrlString(url);
                     }
 
                     if (!forceUpgrade) {

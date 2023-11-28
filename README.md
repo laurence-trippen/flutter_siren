@@ -1,4 +1,6 @@
-# 🚨 flutter_siren
+# 🚨 flutter_siren_2
+
+
 
 The Flutter port of the popular [Siren](https://github.com/ArtSabintsev/Siren), one way to notify users when a new version of your app is available and prompt them to upgrade.
 
@@ -12,7 +14,7 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  flutter_siren: <latest-version>
+  flutter_siren_2: <latest-version>
 ```
 
 And install the packages from the command line:
@@ -25,7 +27,7 @@ $ flutter pub get
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_siren/flutter_siren.dart';
+import 'package:flutter_siren_2/flutter_siren_2.dart';
 
 // Check update on button press with AlertDialog.
 
