@@ -1,4 +1,18 @@
-# 🚨 flutter_siren_2
+# flutter_siren_2
+
+This fork of [flutter_siren](https://pub.dev/packages/flutter_siren/example) fixes a few problems with `Android API 33` and has `up-to-date` dependencies (28 Nov. 2023). 
+
+I created the fork mainly because I couldn't compile flutter_siren with a current flutter installation with (Android) because the dependencies were out-of-date and additionally some customization was needed to target API 33 from Android. Unfortunately, the original repo has been archived and is no longer maintained.
+
+## Install
+
+```sh
+$ flutter pub add flutter_siren_2
+```
+
+[New Pub Dev Page](https://pub.dev/packages/flutter_siren_2)
+
+# 🚨 flutter_siren (Original Readme)
 
 
 
