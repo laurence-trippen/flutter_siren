@@ -1,6 +1,6 @@
 name: flutter_siren_2
 description: One way to notify users when a new version of your app is available and prompt them to upgrade.
-version: '1.2.1'
+version: '1.2.2'
 homepage: https://github.com/laurence-trippen/flutter_siren_2
 issue_tracker: https://github.com/diegocosta/flutter_siren/issues
 

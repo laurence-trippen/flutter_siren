@@ -1,3 +1,7 @@
+# [1.2.2](https://github.com/laurence-trippen/flutter_siren_2) (2023-11-29)
+
+* updated README.md (explanation why there is flutter_siren_2 now)
+
 # [1.2.1](https://github.com/laurence-trippen/flutter_siren_2) (2023-11-27)
 
 * updated dependencies
