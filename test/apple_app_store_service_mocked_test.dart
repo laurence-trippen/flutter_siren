@@ -12,7 +12,7 @@ void main() async {
     });
   }
 
-  group('SirenAppleAppStore', () {
+  group('SirenAppleAppStore (Mocked Client)', () {
     test('returns the app version', () async {
       mockClient({
         'resultCount': 1,
