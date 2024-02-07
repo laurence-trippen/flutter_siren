@@ -7,8 +7,10 @@ class SirenGooglePlayStore implements SirenStoreService<SirenStoreResponse> {
   static Client client = Client();
 
   @override
-  Future<SirenStoreResponse> getStoreResponse({required String from}) async {
-    final url = 'https://play.google.com/store/apps/details?id=$from&hl=en';
+  Future<SirenStoreResponse> getStoreResponse({required String from, String? countryCode}) async {
+    final String country = countryCode ?? "en";
+
+    final url = 'https://play.google.com/store/apps/details?id=$from&hl=$country';
     final response = await client.get(Uri.parse(url));
 
     final match =

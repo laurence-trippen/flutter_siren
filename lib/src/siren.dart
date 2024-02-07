@@ -15,6 +15,10 @@ class Siren {
   SirenStoreResponse _response =
       SirenStoreResponse(version: '', package: '', url: '');
 
+  final String? countryCode;
+
+  Siren({ this.countryCode });
+
   static SirenStoreService _getStoreClient() {
     if (Platform.isAndroid) {
       return SirenGooglePlayStore();
@@ -31,7 +35,7 @@ class Siren {
   Future<Version> get storeVersion async {
     final packageInfo = await PackageInfo.fromPlatform();
     _response =
-        await _getStoreClient().getStoreResponse(from: packageInfo.packageName);
+        await _getStoreClient().getStoreResponse(from: packageInfo.packageName, countryCode: countryCode);
     return Version.parse(_response.version);
   }
 

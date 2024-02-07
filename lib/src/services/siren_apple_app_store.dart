@@ -9,8 +9,10 @@ class SirenAppleAppStore implements SirenStoreService<SirenStoreResponse> {
   static Client client = Client();
 
   @override
-  Future<SirenStoreResponse> getStoreResponse({required String from}) async {
-    final url = Uri.parse('https://itunes.apple.com/lookup?bundleId=$from');
+  Future<SirenStoreResponse> getStoreResponse({required String from, String? countryCode}) async {
+    final String lookup = countryCode != null ? "$countryCode/lookup" : "lookup";
+
+    final url = Uri.parse('https://itunes.apple.com/$lookup?bundleId=$from');
     final response = await client.get(url, headers: {
       'Cache-Control': 'no-cache',
       'Content-Type': 'application/json',

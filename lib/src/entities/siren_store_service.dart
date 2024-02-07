@@ -1,3 +1,3 @@
 abstract class SirenStoreService<T> {
-  Future<T> getStoreResponse({required String from});
+  Future<T> getStoreResponse({required String from, String? countryCode});
 }
